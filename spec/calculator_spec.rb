@@ -97,11 +97,18 @@ describe "Calculator without stringify" do
 
     #Memory
 
-    # it "saves to memory value assigned" do 
-    #     #x = 10  
-    #     #calculator.memory = x
-    #     expect( calculator.mem=10).to be_eq(10)
-    # end
+    it "saves to memory value assigned" do 
+            calculator.memory = 10
+            expect( calculator.memory ).to eq(10)
+    end
+
+    it "saves to memory value assigned" do 
+            calculator.memory = 10
+            calculator.memory
+            expect( calculator.memory ).to eq(nil)
+    end
+
+
 end
 
 
