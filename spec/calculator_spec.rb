@@ -102,12 +102,15 @@ describe "Calculator without stringify" do
             expect( calculator.memory ).to eq(10)
     end
 
+   it "returns memory value assigned" do 
+            expect( calculator.memory=10 ).to eq(10)
+    end
+
     it "saves to memory value assigned" do 
             calculator.memory = 10
             calculator.memory
             expect( calculator.memory ).to eq(nil)
     end
-
 
 end
 
